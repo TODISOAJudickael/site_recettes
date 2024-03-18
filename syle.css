@@ -1,3 +1,7 @@
+/*----Styles pour les mobiles----*/
+
+
+/* il fait addapter tout les contenus */
 * {
     overflow: auto;
 }
@@ -12,9 +16,8 @@ body {
 div.contenu {
     background-color: white;
     text-align: center;
-    margin: 60px 10% 80px 10%;
-    padding: 0px 30px 30px 30px;
-    min-width: 413px;
+    margin: 35px 8% 40px 8%;
+    padding: 0px 8px 20px 8px;
     box-shadow: 0px 0px 20px 1px black;
     overflow: visible;
 }
@@ -73,15 +76,6 @@ div.position {
     
 }
 
-table.position {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    background-color: #6C829DC0;
-    height: 80px;
-}
-
 img.centre {
     display: block;
     text-align: center;    
@@ -92,14 +86,29 @@ img.centre {
     object-fit: cover;
 }
 
-tr.th {
+table.position {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: #6C829DC0;
+    height: 50px;
+}
+
+
+table.position tr.tr {
     vertical-align: top;    
-    font-size:small;
+    font-size:16px;
+}
+
+table.position tr.th {
+    vertical-align: top;    
+    font-size:11px;
 }
 
 
 div.section {
-    width: 45%;
+    width: 100%;
     margin-top: 30px;
     display: inline-block;
 }
@@ -113,14 +122,11 @@ div.section h2 {
 }
 
 div.section1 {    
-    margin-right: 10%;
+    display: inline-block;
+    
 
 }
 
-div.section2 {    
-    float: right;  
-    text-align: left;   
-}
 
 div.list1 {
     list-style-type: none;
@@ -135,16 +141,7 @@ div.list1 p.ingredient {
     margin-bottom: 2px;
     font-size: 14px;
 }
-/*
-table.preparation p.num {
-    background-color: #8BA1BB;
-    padding: 6px 10px;
-    border-radius: 50%;
-    color: white;
-    font-size: 14px;
-    font-weight: bolder;
-}
-*/
+
 table.preparation td.nomnum {
     padding-left: 10px;
     padding-top: 5.1px;
@@ -173,11 +170,60 @@ table.preparation td.nomnum {
     font-size: 14px;
     padding-left: 10px;
     padding-bottom: 10px;
+    text-align: left;
 }
 
 table.preparation tr {
     height: 40px;
 }
 
-/* il fait addapter tout les contenus */
+
+/*================================*/
+
+/*----Styles pour l'ordinateur'----*/
+/*----paramettre pour le responsive----*/
+@media only screen and (min-width: 768px) {
+    div.contenu {
+        margin: 60px 10% 80px 10%;
+        padding: 0px 30px 30px 30px;
+        min-width: 413px;
+     
+    }
+    
+    table.position {       
+        height: 80px;
+    }
+
+    table.position tr.tr {   
+        font-size:18px;
+    }
+    
+    table.position tr.th {    
+        font: size 14px;
+    }
+
+    div.section {
+        width: 45%;
+
+    }
+    
+    
+    div.section1 {    
+        margin-right: 10%;
+    
+    }
+    
+    div.section2 {    
+        float: right;   
+    }
+  }
+
+@media sceen and (min-width: 900px) {
+    div.contenu {
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 413px;
+     
+    }
+}
 
